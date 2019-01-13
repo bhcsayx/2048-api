@@ -7,14 +7,23 @@ A 2048 game api for training supervised learning (imitation learning) or reinfor
     * [`agents.py`](game2048/agents.py): the `Agent` class with instances.
     * [`displays.py`](game2048/displays.py): the `Display` class with instances, to show the `Game` state.
     * [`expectimax/`](game2048/expectimax): a powerful ExpectiMax agent by [here](https://github.com/nneonneo/2048-ai).
+    * [`model.py`](game2048/model.py): defines a 6-layer CNN
+    * [`test.py`](game2048/test.py): calls ModelWrapper to train the model
+    * [`ModelWrapper.py`](game2048/ModelWrapper.py) defines class ModelWrapper
 * [`explore.ipynb`](explore.ipynb): introduce how to use the `Agent`, `Display` and `Game`.
 * [`static/`](static/): frontend assets (based on Vue.js) for web app.
 * [`webapp.py`](webapp.py): run the web app (backend) demo.
 * [`evaluate.py`](evaluate.py): evaluate your self-defined agent.
+* [`data-model.zip`](data-model.zip): include data for training and a generated model.
+
 
 # Requirements
 * code only tested on linux system (ubuntu 16.04)
 * Python 3 (Anaconda 3.6.3 specifically) with numpy and flask
+
+# Run the agent
+* train: python test.py
+* run on the webpage: python webapp.py
 
 # To define your own agents
 ```python
